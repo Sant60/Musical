@@ -1,0 +1,190 @@
+@media only screen and (max-width: 1414px) {
+
+    .div1 {
+        display: none;
+    }
+
+    .songItemContainer {
+        height: 100vh;
+    }
+
+    .navbaritem {
+        display: none;
+    }
+
+    .content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        margin-top: 90vh;
+
+    }
+
+    nav {
+        font-family: "Ubuntu", sans-serif;
+        display: flex;
+        flex-direction: column;
+        /* position: fixed; */
+        z-index: 2;
+        width: 100vw;
+        height: 60px;
+        justify-content: space-between;
+        justify-content: center;
+        align-items: center;
+        background: #000;
+    }
+
+    #navsearch {
+        width: 90%;
+
+        background: #36363687;
+        border: none;
+        -webkit-transition: 0.5s;
+        transition: 0.5s;
+        color: white;
+        margin-top: 20px;
+        border-radius: 20px;
+        height: 5em;
+        outline: none;
+        padding-inline-start: 30px;
+    }
+
+    .content .div1 {
+        width: 100vw;
+        height: 30vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        /* padding: 0 20px 0 20px; */
+        margin-bottom: 30px;
+        border-radius: 10px;
+        color: rgb(255, 255, 255);
+        background: #272727;
+    }
+
+    .songItemContainer {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        /* justify-content: center; */
+        /* justify-content: space-between; */
+        flex-direction: column;
+        /* margin-top: 30px; */
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+
+    .div1 .ds1 {
+        width: 50%;
+        height: 100%;
+        margin-bottom: 8px;
+        border-radius: 10px;
+        font-size: 20px;
+        display: none;
+        color: rgb(0, 0, 0);
+        background: none;
+        /* display: flex;
+    flex-direction: column; */
+        justify-content: space-around;
+    }
+
+    .div1 .ds2 {
+        width: 50%;
+        height: 100%;
+        margin-bottom: 8px;
+        background: none;
+        border-radius: 10px;
+        overflow-y: scroll;
+        font-size: 20px;
+
+
+    }
+
+    .div1 .ds2 ul {
+        display: flex;
+        flex-direction: column;
+        /* overflow-y: scroll; */
+        justify-content: space-between;
+
+    }
+
+    .container {
+        width: 99%;
+    }
+
+    .div1 .ds3 {
+        width: 40%;
+        height: 100%;
+        display: flex;
+        overflow-x: scroll;
+        /* flex-direction: column; */
+        border-radius: 10px;
+        font-size: 20px;
+        background: none;
+    }
+
+    .div1 .ds3 ul {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        overflow-x: scroll;
+        height: 100%;
+        padding: 20px;
+
+    }
+
+    /* .songList {
+    width: 100%;
+    height: 100%;
+  } */
+}
+
+@media only screen and (max-width: 813px) {
+
+    .content {
+        margin-top: 230px;
+    }
+
+    .snav ul {
+        display: none;
+    }
+
+    .eachsong {
+        flex-direction: column;
+        width: 100%;
+        padding-left: 10px;
+    }
+
+    .songItem {
+        width: 100%;
+        /* height: 200px; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        cursor: pointer;
+        align-items: center;
+
+        color: rgb(255, 255, 255);
+        /* padding: 10px 5px; */
+        border-radius: 10px;
+    }
+
+    .songList {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .content .div1 {
+        width: 100vw;
+        height: 30vh;
+        display: none;
+        flex-direction: row;
+        justify-content: space-between;
+        /* padding: 0 20px 0 20px; */
+        margin-bottom: 30px;
+        border-radius: 10px;
+        color: rgb(255, 255, 255);
+        background: #272727;
+    }
+}
