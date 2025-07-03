@@ -1,457 +1,181 @@
+<!-- index.html - Updated for Spotify Clone (10 songs only) -->
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify - Santosh's Music</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="icon" type="image/x-icon" href="logo.png" />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spotify -Santosh favorite Music Is here</title>
-    <link rel="icon" type="image/x-icon" href="logo.png">
-    <link rel="stylesheet" href="style.css">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-</head>
-
-<body>
+  <body>
     <nav>
-        <h1>
-            <li class="brand"><img src="logo.png" id="bimg" alt="Spotify"> Spotify</li>
-        </h1>
-        <input id="navsearch" placeholder="Search Your Song" type="text">
-        <ul class="navbaritem">
-            <li><button>Home</button></li>
-            <li><button>About</button></li>
-            <li><button>Playlist</button></li>
-            <li><button>Artist</button></li>
-            <li><button>Podcast</button></li>
-        </ul>
+      <div class="brand">
+        <button class="hamburger" id="hamburger"><i class="fa fa-bars"></i></button>
+        <li class="brand">
+          <img src="./covers/logo.png" id="bimg" alt="Spotify" /> Spotify
+        </li>
+      </div>
+      <input id="navsearch" placeholder="Search Your Song" type="text" />
+      <ul class="navbaritem">
+        <li><button>Home</button></li>
+        <li><button>About</button></li>
+        <li><button>Playlist</button></li>
+        <li><button>Artist</button></li>
+        <li><button>Podcast</button></li>
+      </ul>
     </nav>
 
     <main class="content">
-        <div class="div1">
-            <div class="ds1">
-                <li><i class="fa-solid fa-house"></i>
-                    <p>Home</p>
-                </li>
-                <a href="#navsearch">
-                    <li><i class="fa-solid fa-magnifying-glass"></i>
-                        <p>Search</p>
-                    </li>
-                </a>
-            </div>
-            <div class="ds2">
-                <span>
-                    <h3 class="li">Your Library</h3> <i class="fa-solid fa-plus"></i><i
-                        class="fa-solid fa-arrow-right"></i>
-                </span>
-                <ul class="dsul2">
-                    <li><button>Playlists</button></li>
-                    <li><button>Podcasts&Shows</button></li>
-                    <li><button>Artists</button></li>
-                    <li><button>Playlists</button></li>
-                    <li><button>Podcasts&Shows</button></li>
-                    <li><button>Artists</button></li>
-                    <li><button>Playlists</button></li>
-                    <li><button>Podcasts&Shows</button></li>
-                    <li><button>Artists</button></li>
-                    <li><button>Playlists</button></li>
-                    <li><button>Podcasts&Shows</button></li>
-                    <li><button>Artists</button></li>
-                    <li><button>Playlists</button></li>
-                    <li><button>Podcasts&Shows</button></li>
-                    <li><button>Artists</button></li>
-                </ul>
-            </div>
-            <div class="ds3">
-                <ul>
-                    <li><span><i class="fa-solid fa-magnifying-glass"><input style="display: none;" id="navsearch"
-                                    placeholder="Search Your Song" type="text"></i>
-                            <p>Recents<i class="fa-solid fa-list"></i></p>
-                        </span></li>
-                    <li>Liked songs</li>
-                    <li>Li Li Allen</li>
-                    <li>justin beiber</li>
-                    <li>daddy yankee</li>
-                    <li>Liked songs</li>
-                    <li>Li Li Allen</li>
-                    <li>justin beiber</li>
-                    <li>daddy yankee</li>
-                    <li>Liked songs</li>
-                    <li>Li Li Allen</li>
-                    <li>justin beiber</li>
-                    <li>daddy yankee</li>
-                    <li>Liked songs</li>
-                    <li>Li Li Allen</li>
-                    <li>justin beiber</li>
-                    <li>daddy yankee</li>
-                    <li>Liked songs</li>
-                    <li>Li Li Allen</li>
-                    <li>justin beiber</li>
-                    <li>daddy yankee</li>
-                    <li>Liked songs</li>
-                    <li>Li Li Allen</li>
-                    <li>justin beiber</li>
-                    <li>daddy yankee</li>
-                    <li>Liked songs</li>
-                    <li>Li Li Allen</li>
-                    <li>justin beiber</li>
-                    <li>daddy yankee</li>
-                </ul>
-            </div>
+      <div class="div1">
+        <!-- Sidebar content -->
+        <h3>Your Library</h3>
+        <ul>
+          <li><i class="fa fa-heart"></i> Liked Songs</li>
+          <li><i class="fa fa-history"></i> Recently Played</li>
+          <li><i class="fa fa-user"></i> Artists</li>
+          <li><i class="fa fa-music"></i> Albums</li>
+          <li><i class="fa fa-podcast"></i> Podcasts</li>
+        </ul>
+        <h3>Your Library</h3>
+        <ul>
+          <li>Liked Songs</li>
+          <li>Recently Played</li>
+          <li>Artists</li>
+        </ul>
+      </div>
 
+      <div class="container">
+        <div class="songList">
+          <h2>Top 10 Songs</h2>
+          <div class="eachsong">
+            <!-- Only 10 Song Cards -->
+            <!-- 0 to 9 IDs -->
+            <div class="songItem">
+              <img src="covers/1.jpg" alt="cover 1" />
+              <span class="songName">Song 1</span>
+              <span class="songlistplay">
+                <span class="timestamp"
+                  >03:30 <i id="0" class="far songItemPlay fa-play-circle"></i
+                ></span>
+              </span>
+            </div>
+            <div class="songItem">
+              <img src="covers/2.jpg" alt="cover 2" />
+              <span class="songName">Song 2</span>
+              <span class="songlistplay">
+                <span class="timestamp"
+                  >04:00 <i id="1" class="far songItemPlay fa-play-circle"></i
+                ></span>
+              </span>
+            </div>
+            <div class="songItem">
+              <img src="covers/3.jpg" alt="cover 3" />
+              <span class="songName">Song 3</span>
+              <span class="songlistplay">
+                <span class="timestamp"
+                  >02:45 <i id="2" class="far songItemPlay fa-play-circle"></i
+                ></span>
+              </span>
+            </div>
+            <div class="songItem">
+              <img src="covers/4.jpg" alt="cover 4" />
+              <span class="songName">Song 4</span>
+              <span class="songlistplay">
+                <span class="timestamp"
+                  >03:15 <i id="3" class="far songItemPlay fa-play-circle"></i
+                ></span>
+              </span>
+            </div>
+            <div class="songItem">
+              <img src="covers/5.jpg" alt="cover 5" />
+              <span class="songName">Song 5</span>
+              <span class="songlistplay">
+                <span class="timestamp"
+                  >04:10 <i id="4" class="far songItemPlay fa-play-circle"></i
+                ></span>
+              </span>
+            </div>
+            <div class="songItem">
+              <img src="covers/6.jpg" alt="cover 6" />
+              <span class="songName">Song 6</span>
+              <span class="songlistplay">
+                <span class="timestamp"
+                  >03:00 <i id="5" class="far songItemPlay fa-play-circle"></i
+                ></span>
+              </span>
+            </div>
+            <div class="songItem">
+              <img src="covers/7.jpg" alt="cover 7" />
+              <span class="songName">Song 7</span>
+              <span class="songlistplay">
+                <span class="timestamp"
+                  >03:50 <i id="6" class="far songItemPlay fa-play-circle"></i
+                ></span>
+              </span>
+            </div>
+            <div class="songItem">
+              <img src="covers/8.jpg" alt="cover 8" />
+              <span class="songName">Song 8</span>
+              <span class="songlistplay">
+                <span class="timestamp"
+                  >02:55 <i id="7" class="far songItemPlay fa-play-circle"></i
+                ></span>
+              </span>
+            </div>
+            <div class="songItem">
+              <img src="covers/9.jpg" alt="cover 9" />
+              <span class="songName">Song 9</span>
+              <span class="songlistplay">
+                <span class="timestamp"
+                  >04:20 <i id="8" class="far songItemPlay fa-play-circle"></i
+                ></span>
+              </span>
+            </div>
+            <div class="songItem">
+              <img src="covers/10.jpg" alt="cover 10" />
+              <span class="songName">Song 10</span>
+              <span class="songlistplay">
+                <span class="timestamp"
+                  >03:40 <i id="9" class="far songItemPlay fa-play-circle"></i
+                ></span>
+              </span>
+            </div>
+          </div>
         </div>
-        <div class="container">
-            <div class="songList">
-                <div class="snav">
-                    <h2><img src="logo.png" id="spotimg" alt="Spotify">Spotify</h2>
-                    <ul>
-                        <li><button>Explore premium</button></li>
-                        <li><i class="fa-regular fa-bell"></i></li>
-                        <li><i class="fa-solid fa-users"></i></li>
-                        <li><i class="fa-solid fa-circle-user"></i></li>
-                    </ul>
-                </div>
-                <div class="songItemContainer">
-                    <div class="songlist">
-                        <div class="shead">
-                            <h2>Made for Santosh Kumar</h2>
-                            <p>Show All</p>
-                        </div>
-                        <div class="eachsong">
-                            <div class="songItem"
-                                style="background-image: url(./covers/1.jpg); background-size: cover;">
-                                <img src="./covers/1.jpg" alt="1">
-                                <span class="songName">Let me Love You</span>
-
-                            </div>
-
-                            <div class="songItem"
-                                style="background-image: url(./covers/2.jpg); background-size: cover;">
-                                <img src="./covers/2.jpg" alt="1">
-                                <span class="songName">Let me Love You</span>
-
-                            </div>
-
-                            <div class="songItem"
-                                style="background-image: url(./covers/3.jpg); background-size: cover;">
-                                <img src="./covers/3.jpg" alt="1">
-                                <span class="songName">Let me Love You</span>
-
-                            </div>
-                            <div class="songItem"
-                                style="background-image: url(./covers/3.jpg); background-size: cover;">
-                                <img src="./covers/3.jpg" alt="1">
-                                <span class="songName">Let me Love You</span>
-                                <span class="songlistplay"><span class="timestamp">05:34 <i id="2"
-                                            class="far songItemPlay fa-play-circle"></i> </span></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="songlist">
-                        <div class="shead">
-                            <h2>Your Top Mixes</h2>
-                            <p>Show All</p>
-                        </div>
-                        <div class="eachsong">
-                            <div class="songItem"
-                                style="background-image: url(./covers/4.jpg); background-size: cover;">
-                                <img src="./covers/4.jpg" alt="1">
-                                <span class="songName">Let me Love You</span>
-                                <span class="songlistplay"><span class="timestamp">05:34 <i id="3"
-                                            class="far songItemPlay fa-play-circle"></i> </span></span>
-                            </div>
-
-                            <div class="songItem"
-                                style="background-image: url(./covers/5.jpg); background-size: cover;">
-                                <img src="./covers/5.jpg" alt="1">
-                                <span class="songName">Let me Love You</span>
-                                <span class="songlistplay"><span class="timestamp">05:34 <i id="4"
-                                            class="far songItemPlay fa-play-circle"></i>
-                                    </span></span>
-                            </div>
-                            <div class="songItem"
-                                style="background-image: url(./covers/5.jpg); background-size: cover;">
-                                <img src="./covers/5.jpg" alt="1">
-                                <span class="songName">Let me Love You</span>
-                                <span class="songlistplay"><span class="timestamp">05:34 <i id="4"
-                                            class="far songItemPlay fa-play-circle"></i>
-                                    </span></span>
-                            </div>
-
-                            <div class="songItem"
-                                style="background-image: url(./covers/6.jpg); background-size: cover;">
-                                <img src="./covers/6.jpg" alt="1">
-                                <span class="songName">Let me Love You</span>
-                                <span class="songlistplay"><span class="timestamp">05:34 <i id="5"
-                                            class="far songItemPlay fa-play-circle"></i>
-                                    </span></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="songlist">
-                        <div class="shead">
-                            <h2>Recently Played</h2>
-                            <p>Show All</p>
-                        </div>
-                        <div class="eachsong">
-                            <div class="songItem"
-                                style="background-image: url(./covers/7.jpg); background-size: cover;">
-                                <img src="./covers/7.jpg" alt="1">
-                                <span class="songName">Let me Love You</span>
-                                <span class="songlistplay"><span class="timestamp">05:34 <i id="6"
-                                            class="far songItemPlay fa-play-circle"></i>
-                                    </span></span>
-                            </div>
-                            <div class="songItem"
-                                style="background-image: url(./covers/7.jpg); background-size: cover;">
-                                <img src="./covers/7.jpg" alt="1">
-                                <span class="songName">Let me Love You</span>
-                                <span class="songlistplay"><span class="timestamp">05:34 <i id="6"
-                                            class="far songItemPlay fa-play-circle"></i>
-                                    </span></span>
-                            </div>
-
-                            <div class="songItem"
-                                style="background-image: url(./covers/8.jpg); background-size: cover;">
-                                <img src="./covers/8.jpg" alt="1">
-                                <span class="songName">Let me Love You</span>
-                                <span class="songlistplay"><span class="timestamp">05:34 <i id="7"
-                                            class="far songItemPlay fa-play-circle"></i>
-                                    </span></span>
-                            </div>
-
-                            <div class="songItem"
-                                style="background-image: url(./covers/9.jpg); background-size: cover;">
-                                <img src="./covers/9.jpg" alt="1">
-                                <span class="songName">Let me Love You</span>
-                                <span class="songlistplay"><span class="timestamp">05:34 <i id="8"
-                                            class="far songItemPlay fa-play-circle"></i>
-                                    </span></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="songlist">
-                        <div class="shead">
-                            <h2>Your Shows</h2>
-                            <p>Show All</p>
-                        </div>
-                        <div class="eachsong">
-                            <div class="songItem"
-                                style="background-image: url(./covers/10.jpg); background-size: cover;">
-                                <img src="./covers/10.jpg" alt="1">
-                                <span class="songName">Let me Love You</span>
-                                <span class="songlistplay"><span class="timestamp">05:34 <i id="9"
-                                            class="far songItemPlay fa-play-circle"></i>
-                                    </span></span>
-                            </div>
-                            <div class="songItem"
-                                style="background-image: url(./covers/10.jpg); background-size: cover;">
-                                <img src="./covers/10.jpg" alt="1">
-                                <span class="songName">Let me Love You</span>
-                                <span class="songlistplay"><span class="timestamp">05:34 <i id="9"
-                                            class="far songItemPlay fa-play-circle"></i>
-                                    </span></span>
-                            </div>
-                            <div class="songItem"
-                                style="background-image: url(./covers/10.jpg); background-size: cover;">
-                                <img src="./covers/10.jpg" alt="1">
-                                <span class="songName">Let me Love You</span>
-                                <span class="songlistplay"><span class="timestamp">05:34 <i id="9"
-                                            class="far songItemPlay fa-play-circle"></i>
-                                    </span></span>
-                            </div>
-                            <div class="songItem"
-                                style="background-image: url(./covers/10.jpg); background-size: cover;">
-                                <img src="./covers/10.jpg" alt="1">
-                                <span class="songName">Let me Love You</span>
-                                <span class="songlistplay"><span class="timestamp">05:34 <i id="9"
-                                            class="far songItemPlay fa-play-circle"></i>
-                                    </span></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="songlist">
-                        <div class="shead">
-                            <h2>Your Biggest Hits</h2>
-                            <p>Show All</p>
-                        </div>
-                        <div class="eachsong">
-                            <div class="songItem"
-                                style="background-image: url(./covers/10.jpg); background-size: cover;">
-                                <img src="./covers/10.jpg" alt="1">
-                                <span class="songName">Let me Love You</span>
-                                <span class="songlistplay"><span class="timestamp">05:34 <i id="9"
-                                            class="far songItemPlay fa-play-circle"></i>
-                                    </span></span>
-                            </div>
-                            <div class="songItem"
-                                style="background-image: url(./covers/10.jpg); background-size: cover;">
-                                <img src="./covers/10.jpg" alt="1">
-                                <span class="songName">Let me Love You</span>
-                                <span class="songlistplay"><span class="timestamp">05:34 <i id="9"
-                                            class="far songItemPlay fa-play-circle"></i>
-                                    </span></span>
-                            </div>
-                            <div class="songItem"
-                                style="background-image: url(./covers/10.jpg); background-size: cover;">
-                                <img src="./covers/10.jpg" alt="1">
-                                <span class="songName">Let me Love You</span>
-                                <span class="songlistplay"><span class="timestamp">05:34 <i id="9"
-                                            class="far songItemPlay fa-play-circle"></i>
-                                    </span></span>
-                            </div>
-                            <div class="songItem"
-                                style="background-image: url(./covers/10.jpg); background-size: cover;">
-                                <img src="./covers/10.jpg" alt="1">
-                                <span class="songName">Let me Love You</span>
-                                <span class="songlistplay"><span class="timestamp">05:34 <i id="9"
-                                            class="far songItemPlay fa-play-circle"></i>
-                                    </span></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="songlist">
-                        <div class="shead">
-                            <h2>Based on your recent listning</h2>
-                            <p>Show All</p>
-                        </div>
-                        <div class="eachsong">
-                            <div class="songItem"
-                                style="background-image: url(./covers/10.jpg); background-size: cover;">
-                                <img src="./covers/10.jpg" alt="1">
-                                <span class="songName">Let me Love You</span>
-                                <span class="songlistplay"><span class="timestamp">05:34 <i id="9"
-                                            class="far songItemPlay fa-play-circle"></i>
-                                    </span></span>
-                            </div>
-                            <div class="songItem"
-                                style="background-image: url(./covers/10.jpg); background-size: cover;">
-                                <img src="./covers/10.jpg" alt="1">
-                                <span class="songName">Let me Love You</span>
-                                <span class="songlistplay"><span class="timestamp">05:34 <i id="9"
-                                            class="far songItemPlay fa-play-circle"></i>
-                                    </span></span>
-                            </div>
-                            <div class="songItem"
-                                style="background-image: url(./covers/10.jpg); background-size: cover;">
-                                <img src="./covers/10.jpg" alt="1">
-                                <span class="songName">Let me Love You</span>
-                                <span class="songlistplay"><span class="timestamp">05:34 <i id="9"
-                                            class="far songItemPlay fa-play-circle"></i>
-                                    </span></span>
-                            </div>
-                            <div class="songItem"
-                                style="background-image: url(./covers/10.jpg); background-size: cover;">
-                                <img src="./covers/10.jpg" alt="1">
-                                <span class="songName">Let me Love You</span>
-                                <span class="songlistplay"><span class="timestamp">05:34 <i id="9"
-                                            class="far songItemPlay fa-play-circle"></i>
-                                    </span></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="songlist">
-                        <div class="shead">
-                            <h2>Indias Best</h2>
-                            <p>Show All</p>
-                        </div>
-                        <div class="eachsong">
-                            <div class="songItem"
-                                style="background-image: url(./covers/10.jpg); background-size: cover;">
-                                <img src="./covers/10.jpg" alt="1">
-                                <span class="songName">Let me Love You</span>
-                                <span class="songlistplay"><span class="timestamp">05:34 <i id="9"
-                                            class="far songItemPlay fa-play-circle"></i>
-                                    </span></span>
-                            </div>
-                            <div class="songItem"
-                                style="background-image: url(./covers/10.jpg); background-size: cover;">
-                                <img src="./covers/10.jpg" alt="1">
-                                <span class="songName">Let me Love You</span>
-                                <span class="songlistplay"><span class="timestamp">05:34 <i id="9"
-                                            class="far songItemPlay fa-play-circle"></i>
-                                    </span></span>
-                            </div>
-                            <div class="songItem"
-                                style="background-image: url(./covers/10.jpg); background-size: cover;">
-                                <img src="./covers/10.jpg" alt="1">
-                                <span class="songName">Let me Love You</span>
-                                <span class="songlistplay"><span class="timestamp">05:34 <i id="9"
-                                            class="far songItemPlay fa-play-circle"></i>
-                                    </span></span>
-                            </div>
-                            <div class="songItem"
-                                style="background-image: url(./covers/10.jpg); background-size: cover;">
-                                <img src="./covers/10.jpg" alt="1">
-                                <span class="songName">Let me Love You</span>
-                                <span class="songlistplay"><span class="timestamp">05:34 <i id="9"
-                                            class="far songItemPlay fa-play-circle"></i>
-                                    </span></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="songlist">
-                        <div class="shead">
-                            <h2>Made for Santosh Kumar</h2>
-                            <p>Show All</p>
-                        </div>
-                        <div class="eachsong">
-                            <div class="songItem"
-                                style="background-image: url(./covers/10.jpg); background-size: cover;">
-                                <img src="./covers/10.jpg" alt="1">
-                                <span class="songName">Let me Love You</span>
-                                <span class="songlistplay"><span class="timestamp">05:34 <i id="9"
-                                            class="far songItemPlay fa-play-circle"></i>
-                                    </span></span>
-                            </div>
-                            <div class="songItem"
-                                style="background-image: url(./covers/10.jpg); background-size: cover;">
-                                <img src="./covers/10.jpg" alt="1">
-                                <span class="songName">Let me Love You</span>
-                                <span class="songlistplay"><span class="timestamp">05:34 <i id="9"
-                                            class="far songItemPlay fa-play-circle"></i>
-                                    </span></span>
-                            </div>
-                            <div class="songItem"
-                                style="background-image: url(./covers/10.jpg); background-size: cover;">
-                                <img src="./covers/10.jpg" alt="1">
-                                <span class="songName">Let me Love You</span>
-                                <span class="songlistplay"><span class="timestamp">05:34 <i id="9"
-                                            class="far songItemPlay fa-play-circle"></i>
-                                    </span></span>
-                            </div>
-                            <div class="songItem"
-                                style="background-image: url(./covers/10.jpg); background-size: cover;">
-                                <img src="./covers/10.jpg" alt="1">
-                                <span class="songName">Let me Love You</span>
-                                <span class="songlistplay"><span class="timestamp">05:34 <i id="9"
-                                            class="far songItemPlay fa-play-circle"></i>
-                                    </span></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="songBanner"></div>
-        </div>
-
-        </div>
-        </div>
-        <div class="bottom">
-            <input type="range" name="range" id="myProgressBar" min="0" value="0" max="100">
-            <div class="icons">
-                <!-- fontawesome icons -->
-                <i class="fas fa-3x fa-step-backward" id="previous"></i>
-                <i class="far fa-3x fa-play-circle" id="masterPlay"></i>
-                <i class="fas fa-3x fa-step-forward" id="next"></i>
-            </div>
-            <div class="songInfo">
-                <img src="playing.gif" width="42px" alt="" id="gif"> <span id="masterSongName">Warriyo - Mortals [NCS
-                    Release]</span>
-            </div>
+      </div>
     </main>
+
+    <div class="bottom">
+      <input
+        type="range"
+        name="range"
+        id="myProgressBar"
+        min="0"
+        value="0"
+        max="100"
+      />
+      <div class="icons">
+        <i class="fas fa-3x fa-step-backward" id="previous"></i>
+        <i class="far fa-3x fa-play-circle" id="masterPlay"></i>
+        <i class="fas fa-3x fa-step-forward" id="next"></i>
+      </div>
+      <div class="songInfo">
+        <img
+          src="./covers/playing.gif"
+          width="42"
+          id="gif"
+          style="opacity: 0"
+        />
+        <span id="masterSongName">Song 1</span>
+      </div>
+    </div>
+
     <script src="script.js"></script>
-
-</body>
-
+  </body>
 </html>
